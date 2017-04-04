@@ -1,5 +1,5 @@
 import re,urllib2
-emailsearch=re.compile(r'[\w*\.]+@[\w*\.]+')
+emailsearch=re.compile(r'[\w.-_]+@[\w.]+')
 files=urllib2.urlopen("web link")
 code=files.read()
 m=emailsearch.findall(code)
